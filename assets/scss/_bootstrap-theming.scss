@@ -1,0 +1,101 @@
+@use "presets" as *;
+@use "mixins" as *;
+
+.navbar-inverse {
+  background-color: $color-deep-dark;
+  background-color: transparent;
+  margin-bottom: 0;
+
+  .navbar-nav {
+    > li > a {
+      transition: background-color 0.5s;
+      @include sm-min {
+        border-radius: 4px;
+      }
+      @include sm {
+        text-align: center;
+      }
+
+      &:focus,
+      &:hover {
+        background-color: $color-primary;
+      }
+    }
+
+    > .active > a {
+      background-color: $color-primary-dark;
+
+      &:focus,
+      &:hover {
+        background-color: $color-primary-light;
+      }
+    }
+  }
+}
+
+.navbar-left {
+  @include sm {
+    margin-bottom: 0;
+  }
+
+  @include sm-min {
+    > li {
+      margin: 5px 5px 5px 0;
+    }
+  }
+}
+
+.navbar-right {
+  @include sm {
+    margin-top: 0;
+  }
+
+  @include sm-min {
+    > li {
+      margin: 5px 0 5px 5px;
+    }
+  }
+}
+
+.navbar-header {
+  text-align: center;
+}
+.navbar-toggle {
+  float: none;
+  margin-right: 0;
+}
+
+.panel-info {
+  border: none;
+  box-shadow: none;
+  background-color: $color-gray-light;
+
+  &:not(&:last-of-type) {
+    margin-bottom: $gap * 2;
+  }
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+
+  > .panel-heading {
+    color: $color-white;
+    background-color: $color-accent;
+    border: none;
+    font-size: 1.25rem;
+    letter-spacing: 0.008em;
+  }
+}
+
+.panel-body {
+  border: 1px solid $color-gray;
+  border-radius: 0 0 4px 4px;
+}
+
+.input-lg,
+.input-group-lg > .form-control {
+  font-size: 0.875rem;
+}
+
+.thumbnail {
+  transition: background-color 0.25s;
+}

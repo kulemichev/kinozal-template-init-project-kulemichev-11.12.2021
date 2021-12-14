@@ -1,0 +1,154 @@
+@use "presets" as *;
+@use "mixins" as *;
+
+.left-sidebar {
+  margin-bottom: $gap-xl;
+}
+
+.vertical-slider {
+  border-radius: 4px;
+  overflow: hidden;
+
+  &__image {
+    width: 100%;
+  }
+}
+
+.user-login {
+  position: relative;
+
+  &__tabs {
+    position: absolute;
+    top: 0;
+    right: $gap-md;
+    border: none;
+
+    a {
+      background-color: transparent !important;
+      border: none !important;
+      color: $color-gray;
+      padding: 14px 5px 12px !important;
+    }
+
+    .active a {
+      color: $color-white !important;
+    }
+  }
+}
+
+$image-size: 75px;
+$image-size-with-padding: $image-size + $gap-md;
+
+.site-news-item {
+  position: relative;
+  clear: both;
+
+  &:not(:last-child) {
+    min-height: $image-size-with-padding;
+    margin-bottom: $gap;
+
+    &::after {
+      content: "";
+      position: absolute;
+      right: 0;
+      bottom: -4px;
+      height: 1px;
+      width: calc(100% - #{$image-size-with-padding});
+      background-color: $color-gray;
+    }
+  }
+
+  &:hover {
+    a {
+      color: $color-accent;
+    }
+
+    .thumbnail {
+      background-color: $color-accent;
+      border-color: $color-accent;
+    }
+  }
+
+  &__thumbnail {
+    width: $image-size;
+    float: left;
+    margin: 0 $gap-md $gap-md 0;
+  }
+
+  &__image {
+    width: 100%;
+  }
+
+  &__title {
+    margin-bottom: 0.5em;
+  }
+
+  &__link {
+    transition: color 0.25s;
+    @include block-shortener(1rem, 1.5, 50px, 2);
+  }
+}
+
+//
+
+//   &__date {
+//     font-size: 0.8rem;
+//     text-align: right;
+//     color: $color-gray-dark;
+//   }
+// }
+
+// .top-films {
+//   &__body {
+//     padding-left: 0;
+//     padding-right: 0;
+//   }
+
+//   &__list {
+//     margin-bottom: 0;
+//   }
+
+//   &__item {
+//     margin-right: -1px;
+//     margin-left: -1px;
+//     background-color: transparent;
+//     color: $color-primary !important;
+
+//     &:first-child {
+//       border-radius: 0;
+//       border-top: none;
+//     }
+
+//     &:last-child {
+//       border-radius: 0;
+//       border-bottom: none;
+//     }
+
+//     &:hover,
+//     &:focus {
+//       color: $color-white !important;
+//       background-color: $color-accent !important;
+//       border-color: $color-accent;
+//     }
+//   }
+
+//   &__badge {
+//   }
+// }
+
+// .top-films__list {
+// }
+
+// .top-films__item {
+// }
+// .top-films__badge {
+// }
+
+// .site-news-item__image {
+// }
+// .site-news-item__title {
+// }
+// .site-news-item__link {
+// }
+// .site-news-item__dat {
+// }
