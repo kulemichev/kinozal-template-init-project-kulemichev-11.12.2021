@@ -89,20 +89,18 @@ $image-size-with-padding: $image-size + $gap-md;
   }
 }
 
-//
+&__date {
+  font-size: 0.8rem;
+  text-align: right;
+  color: $color-gray-dark;
+}
 
-//   &__date {
-//     font-size: 0.8rem;
-//     text-align: right;
-//     color: $color-gray-dark;
-//   }
-// }
-
-// .top-films {
-//   &__body {
-//     padding-left: 0;
-//     padding-right: 0;
-//   }
+.top-films {
+  &__body {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
 
 //   &__list {
 //     margin-bottom: 0;
