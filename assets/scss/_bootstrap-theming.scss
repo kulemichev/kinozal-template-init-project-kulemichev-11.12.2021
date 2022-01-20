@@ -69,9 +69,10 @@
   border: none;
   box-shadow: none;
   background-color: $color-gray-light;
+  margin-bottom: $gap * 2;
 
   &:not(&:last-of-type) {
-    margin-bottom: $gap * 2;
+    margin-bottom: 0;
   }
   &:last-of-type {
     margin-bottom: 0;
@@ -82,7 +83,7 @@
     background-color: $color-accent;
     border: none;
     font-size: 1.25rem;
-    letter-spacing: 0.008em;
+    letter-spacing: 0.08em;
   }
 }
 
