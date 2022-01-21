@@ -12,3 +12,25 @@
 .user-login {
   margin-bottom: $gap * 4;
 }
+
+.new-films,
+.top-week {
+  &-row {
+    padding-left: -$gap-sm;
+    padding-right: -$gap-sm;
+    margin-bottom: -$gap;
+  }
+  &-item {
+    padding-left: $gap-sm;
+    padding-right: $gap-sm;
+    margin-bottom: $gap;
+
+    &__title {
+      @include text-shortener;
+    }
+
+    &__thumbnail {
+      margin-bottom: 0;
+    }
+  }
+}
