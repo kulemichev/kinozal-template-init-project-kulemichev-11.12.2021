@@ -84,6 +84,51 @@ h2 {
   color: #ffffff;
   letter-spacing: 0.2em;
 }
+
+/* вручную добавил линию и изменил цвет футтера должен быть в  _common */
+
+h2 {
+  margin-left: 0.85em;
+}
+
+h1::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  border-bottom: 3px solid #df8a13;
+  margin: 0.85em 0 0 15px;
+}
+
+h2::before {
+  content: "";
+  position: relative;
+  width: 100%;
+  border-bottom: 3px solid #df8a13;
+  margin: 0.85em 0 0 15px;
+}
+
+h2::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  border-bottom: 3px solid #df8a13;
+  margin: 0.85em 0 0 15px;
+}
+
+section {
+  position: relative;
+  overflow: hidden;
+}
+
+.footer {
+  background-color: black;
+}
+
+.footer h4,
+.footer-fifth a {
+  color: white;
+}
+
 @media (min-width: 576px) {
   .header-logo__title {
     font-size: 3.5rem;
