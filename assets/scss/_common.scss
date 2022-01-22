@@ -23,7 +23,14 @@ a {
 
 h1 {
   font-family: $font-header;
-  margin: -$gap-md 0 0 1em;
+  margin: -$gap-md 0 1em 0;
+  &::after {
+    position: absolute;
+    width: 100%;
+    margin: 0.85em 0 0 15px;
+    content: "";
+    border-bottom: 3px solid $color-accent-light;
+  }
   @include xs-min {
     font-size: 3rem;
   }
@@ -34,6 +41,7 @@ h1 {
 
 h2 {
   font-family: $font-header;
+  margin: 0 0 0 1em;
   @include xs-min {
     font-size: 2.5rem;
   }
@@ -41,22 +49,34 @@ h2 {
     font-size: 1.75rem;
   }
   &::before {
-    content: "";
     position: absolute;
-    width: 100%;
+    left: 0;
+    width: 30px;
+    margin: 0.25em 0 0 0;
+    content: "";
     border-bottom: 3px solid $color-accent-light;
-    margin: 0.85em 0 0 $gap;
   }
 
   &::after {
-    content: "";
     position: absolute;
     width: 100%;
+    margin: 0.85em 0 0 15px;
+    content: "";
     border-bottom: 3px solid $color-accent-light;
-    margin: 0.85em 0 0 $gap;
   }
 }
 section {
   position: relative;
   overflow: hidden;
 }
+
+// footer {
+//   ul {
+//     color: $color-gray-light;
+
+//     &:hover,
+//     &:focus {
+//       text-decoration: none;
+//       color: $color-white;
+//     }
+// };
