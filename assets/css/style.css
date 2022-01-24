@@ -322,11 +322,24 @@ section {
 .footer h4 {
   color: white;
 }
+.footer .footer-top a {
+  color: #6f6f6f;
+}
+.footer .footer-top a:hover,
+.footer .footer-top a:focus {
+  text-decoration: none;
+  color: #ffffff;
+}
 .footer .footer-bottom {
   text-align: center;
 }
 .footer .footer-bottom a {
-  color: white;
+  color: #d5d5d5;
+}
+.footer .footer-bottom a:hover,
+.footer .footer-bottom a:focus {
+  text-decoration: none;
+  color: #ffffff;
 }
 @media (min-width: 576px) {
   h1 {
