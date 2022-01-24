@@ -65,7 +65,24 @@ h2 {
     border-bottom: 3px solid $color-accent-light;
   }
 }
+
 section {
   position: relative;
   overflow: hidden;
+}
+
+.caption {
+  color: $color-white;
+
+  &:hover,
+  &:focus {
+    color: $color-accent;
+  }
+}
+
+.btn-warning {
+  color: #fff;
+  background-color: #f0ad4e;
+  border-color: #eea236;
+  float: right;
 }
