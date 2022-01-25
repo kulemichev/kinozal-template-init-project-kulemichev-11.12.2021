@@ -16,8 +16,8 @@
 .new-films,
 .top-week {
   &-row {
-    padding-left: -$gap-sm;
-    padding-right: -$gap-sm;
+    margin-left: -$gap-sm;
+    margin-right: -$gap-sm;
     margin-bottom: -$gap;
   }
   &-item {
@@ -35,43 +35,16 @@
   }
 }
 
-// .new-films-item__thumbnail:hover {
-//   color: blue;
-//   background-color: red;
-//   // border-color: $color-accent;
-// }
-
-// li a:hover {
-//   color: #ffe; /* Цвет текста активного пункта */
-//   background-color: #5488af; /* Цвет фона активного пункта */
-
-// .top-week-item__title {
-//   // .film-news-item__image
-//   color: $color-primary;
-
-//   &:hover,
-//   &:focus {
-//     text-decoration: none;
-//     color: $color-accent;
-//   }
-// }
-
-// .film-news-item__image:hover,
-// .film-news-item__image:focus {
-//   color: $color-white !important;
-//   background-color: $color-accent !important;
-//   border-color: $color-accent;
-// }
-// }
-
-// .new-films,
-// .top-week,
-// .film-news-item {
-//   color: $color-primary;
-
-//   &:hover,
-//   &:focus {
-//     text-decoration: none;
-//     color: $color-accent;
-//   }
-// }
+.new-films-item__thumbnail,
+.new-films-item__title,
+.top-week-item__thumbnail,
+.top-week-item__title,
+.film-news-item__thumbnail {
+  color: black;
+  &:hover,
+  &:focus {
+    // text-decoration: none;
+    color: white;
+    background: $color-accent;
+  }
+}

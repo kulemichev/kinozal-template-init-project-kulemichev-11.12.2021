@@ -118,13 +118,6 @@ h2::after {
   border-bottom: 3px solid #f0ad4f;
 }
 
-h3 {
-  font-family: inherit;
-  font-weight: 500;
-  line-height: 1.1em;
-  color: inherit;
-}
-
 section {
   position: relative;
   overflow: hidden;
@@ -135,6 +128,13 @@ section {
 }
 .caption:hover, .caption:focus {
   color: #df8a13;
+}
+
+.btn-warning {
+  color: #fff;
+  background-color: #f0ad4e;
+  border-color: #eea236;
+  float: right;
 }
 
 .header {
@@ -177,8 +177,8 @@ section {
 
 .new-films-row,
 .top-week-row {
-  padding-left: -7.5px;
-  padding-right: -7.5px;
+  margin-left: -7.5px;
+  margin-right: -7.5px;
   margin-bottom: -15px;
 }
 .new-films-item,
@@ -198,6 +198,26 @@ section {
 .new-films-item__thumbnail,
 .top-week-item__thumbnail {
   margin-bottom: 0;
+}
+
+.new-films-item__thumbnail,
+.new-films-item__title,
+.top-week-item__thumbnail,
+.top-week-item__title,
+.film-news-item__thumbnail {
+  color: black;
+}
+.new-films-item__thumbnail:hover, .new-films-item__thumbnail:focus,
+.new-films-item__title:hover,
+.new-films-item__title:focus,
+.top-week-item__thumbnail:hover,
+.top-week-item__thumbnail:focus,
+.top-week-item__title:hover,
+.top-week-item__title:focus,
+.film-news-item__thumbnail:hover,
+.film-news-item__thumbnail:focus {
+  color: white;
+  background: #df8a13;
 }
 
 .left-sidebar {
