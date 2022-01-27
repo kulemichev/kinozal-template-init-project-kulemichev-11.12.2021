@@ -16,14 +16,14 @@
 .new-films,
 .top-week {
   &-row {
-    margin-left: -$gap-sm;
     margin-right: -$gap-sm;
     margin-bottom: -$gap;
+    margin-left: -$gap-sm;
   }
   &-item {
-    padding-left: $gap-sm;
-    padding-right: $gap-sm;
     margin-bottom: $gap;
+    padding-right: $gap-sm;
+    padding-left: $gap-sm;
 
     &__title {
       @include text-shortener;
