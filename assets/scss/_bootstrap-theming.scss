@@ -5,7 +5,7 @@
   margin-bottom: 0;
 
   background-color: $color-deep-dark;
-  background-color: transparent;
+  border-color: transparent;
 
   .navbar-nav {
     > li > a {
@@ -73,15 +73,12 @@
   background-color: $color-gray-light;
   box-shadow: none;
 
-  &:not(&:last-of-type) {
-    margin-bottom: 0;
-  }
   &:last-of-type {
     margin-bottom: 0;
   }
 
   > .panel-heading {
-    letter-spacing: 0.08em;
+    letter-spacing: 0.1em;
 
     color: $color-white;
     border: none;

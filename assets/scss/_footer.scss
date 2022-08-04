@@ -3,34 +3,46 @@
 
 .footer {
   background-color: $color-dark;
-  // color: #6f6f6f;
+  padding-top: $gap * 3;
+  color: $color-gray;
 
   h4 {
-    color: white;
+    color: $color-gray;
   }
 
-  .footer-top {
-    a {
-      color: $color-gray-dark;
-    }
-    a:hover,
-    a:focus {
-      text-decoration: none;
-
-      color: $color-white;
-    }
+  .footer-top a {
+    color: $color-gray-dark;
+  }
+  a:hover,
+  a:focus {
+    text-decoration: none;
+    color: $color-white;
   }
 
   .footer-bottom {
     text-align: center;
-    a {
-      color: #d5d5d5;
-    }
-    a:hover,
-    a:focus {
-      text-decoration: none;
-
-      color: $color-white;
-    }
   }
+  .footer-bottom a {
+    color: $color-gray;
+  }
+  a:hover,
+  a:focus {
+    text-decoration: none;
+    color: $color-white;
+  }
+}
+
+.footer ul {
+  padding: 0;
+
+  list-style: none;
+}
+
+.footer-fifth {
+  margin: 20px 0;
+
+  text-align: center;
+}
+.footer-fifth a {
+  color: $color-gray;
 }
