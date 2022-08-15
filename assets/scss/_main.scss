@@ -16,10 +16,28 @@
   transition: background-color 0.25s;
 }
 
+.film-news-item__text {
+  text-align: justify;
+}
+
 .film-news-item__button {
   float: right;
   margin-bottom: 30px;
   transition: background-color 0.25s;
+}
+
+.film-news-item:hover .thumbnail {
+  border-color: $color-accent;
+  background-color: $color-accent;
+}
+.film-news-item:hover h3 > a {
+  color: $color-accent;
+}
+.film-news-item:hover .btn-warning {
+  background-color: $color-accent;
+}
+.film-news-item h3 > a {
+  transition: color 0.25s;
 }
 
 .new-films,
