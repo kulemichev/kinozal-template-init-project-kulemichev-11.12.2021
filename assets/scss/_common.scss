@@ -102,7 +102,7 @@ section {
 .btn-warning {
   float: right;
 
-  color: #ffffff;
-  border-color: #eea236;
-  background-color: #f0ad4e;
+  color: $color-white;
+  border-color: $color-accent;
+  background-color: $color-accent;
 }

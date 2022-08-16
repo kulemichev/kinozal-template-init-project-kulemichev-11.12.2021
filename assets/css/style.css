@@ -4,8 +4,8 @@
 
 .navbar-inverse {
   margin-bottom: 0;
-  background-color: #191919;
   border-color: transparent;
+  background-color: #191919;
 }
 .navbar-inverse .navbar-nav > li > a {
   -webkit-transition: background-color 0.5s;
@@ -129,8 +129,8 @@ section {
 .btn-warning {
   float: right;
   color: #ffffff;
-  border-color: #eea236;
-  background-color: #f0ad4e;
+  border-color: #df8a13;
+  background-color: #df8a13;
 }
 
 .header {
@@ -398,9 +398,9 @@ section {
 }
 
 .footer {
-  background-color: #232323;
   padding-top: 45px;
   color: #d5d5d5;
+  background-color: #232323;
 }
 .footer h4 {
   color: #d5d5d5;

@@ -2,9 +2,10 @@
 @use "mixins" as *;
 
 .footer {
-  background-color: $color-dark;
   padding-top: $gap * 3;
+
   color: $color-gray;
+  background-color: $color-dark;
 
   h4 {
     color: $color-gray;
@@ -16,6 +17,7 @@
   a:hover,
   a:focus {
     text-decoration: none;
+
     color: $color-white;
   }
 
@@ -28,6 +30,7 @@
   a:hover,
   a:focus {
     text-decoration: none;
+
     color: $color-white;
   }
 }
