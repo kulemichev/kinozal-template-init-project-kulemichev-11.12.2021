@@ -78,13 +78,13 @@
   }
 
   > .panel-heading {
-    letter-spacing: 0.1em;
+    letter-spacing: 0.1em !important;
 
     color: $color-white;
     border: none;
     background-color: $color-accent;
 
-    font-size: 1.25rem;
+    font-size: 1.25rem !important;
   }
 }
 
