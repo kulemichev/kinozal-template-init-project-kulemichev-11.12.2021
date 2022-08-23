@@ -93,9 +93,23 @@
   border-radius: 0 0 4px 4px;
 }
 
-.input-lg,
-.input-group-lg > .form-control {
-  font-size: 0.875rem;
+.btn-lg,
+.input {
+  &-lg,
+  &-group-lg > .form-control {
+    font-size: 0.875rem;
+  }
+}
+
+.well {
+  border-color: $color-gray;
+  background-color: $color-gray-light;
+}
+
+.embed-responsive {
+  border: 1px solid $color-gray;
+  border-bottom: none;
+  border-radius: 4px 4px 0 0;
 }
 
 .thumbnail {
